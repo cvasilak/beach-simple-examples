@@ -1,0 +1,22 @@
+{
+  "name": "beach-simple-examples",
+  "version": "1.0.0",
+  "description": "Small, self-contained examples of @cool-ai/beach-core routing primitives.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "router": "tsx examples/router-demo.ts",
+    "channels": "tsx examples/channels-demo.ts",
+    "all": "npm run router && npm run channels",
+    "typecheck": "tsc"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@cool-ai/beach-core": "^0.13.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
