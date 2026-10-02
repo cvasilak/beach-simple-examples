@@ -5,14 +5,18 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "handler": "tsx examples/handler-demo.ts",
+    "actor": "tsx examples/actor-demo.ts",
+    "routing-rules": "tsx examples/routing-rules-demo.ts",
     "router": "tsx examples/router-demo.ts",
     "channels": "tsx examples/channels-demo.ts",
-    "all": "npm run router && npm run channels",
+    "all": "npm run handler && npm run actor && npm run routing-rules && npm run router && npm run channels",
     "typecheck": "tsc"
   },
   "license": "ISC",
   "dependencies": {
-    "@cool-ai/beach-core": "^0.13.4"
+    "@cool-ai/beach-core": "^0.13.4",
+    "@cool-ai/beach-llm": "^0.8.1"
   },
   "devDependencies": {
     "@types/node": "^26.6.2",
